@@ -1,357 +1,324 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard Toko Baju - Yudan Course</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <!-- Header Section -->
-      <header>
-        <button class="menu-toggle">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="search-container">
-          <input
-            type="text"
-            placeholder="Cari produk, pelanggan, atau pesanan..."
-          />
-          <button><i class="fas fa-search"></i></button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Toko Baju - Yudan Course</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="search-container">
+        <input type="text" placeholder="Cari produk, pelanggan, atau pesanan..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="header-right">
+        <div class="notification">
+          <i class="far fa-bell"></i>
+          <span>3</span>
         </div>
-        <div class="header-right">
-          <div class="notification">
-            <i class="far fa-bell"></i>
-            <span>3</span>
-          </div>
-          <div class="user-profile">
-            <img
-              src="https://randomuser.me/api/portraits/men/32.jpg"
-              alt="User Profile"
-            />
-            <span>Admin Toko</span>
-          </div>
+        <div class="user-profile">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Profile" />
+          <span>Admin Toko</span>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!-- Overlay untuk menutup sidebar -->
-      <div class="overlay"></div>
+    <!-- Overlay untuk menutup sidebar -->
+    <div class="overlay"></div>
 
-      <!-- Sidebar Navigation -->
-      <aside class="sidebar">
-        <div class="logo">
-          <img
-            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM0YTZjZjciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTEgMjFINyAyIDIgMCAwIDEtMi0yVjhhMiAyIDAgMCAxIDItMmgxMGEyIDIgMCAwIDEgMiAydjEuNSI+PC9wYXRoPjxwb2x5bGluZSBwb2ludHM9IjE3IDUgMTIgMTUgNyA1Ij48L3BvbHlsaW5lPjwvc3ZnPg=="
-            alt="Logo"
-          />
-          <h1>FashionStore</h1>
-        </div>
-        <ul class="menu">
-          <li class="menu-item active">
-            <i class="fas fa-home"></i>
-            <span>Dashboard</span>
-          </li>
-          <li class="menu-item">
-            <i class="fas fa-shopping-cart"></i>
-            <span>Pesanan</span>
-          </li>
-          <li class="menu-item">
-            <i class="fas fa-tshirt"></i>
-            <span>Produk</span>
-          </li>
-          <li class="menu-item">
-            <i class="fas fa-users"></i>
-            <span>Pelanggan</span>
-          </li>
-          <li class="menu-item">
-            <i class="fas fa-chart-bar"></i>
-            <span>Laporan</span>
-          </li>
-          <li class="menu-item">
-            <i class="fas fa-cog"></i>
-            <span>Pengaturan</span>
-          </li>
-        </ul>
-      </aside>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img
+          src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM0YTZjZjciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTEgMjFINyAyIDIgMCAwIDEtMi0yVjhhMiAyIDAgMCAxIDItMmgxMGEyIDIgMCAwIDEgMiAydjEuNSI+PC9wYXRoPjxwb2x5bGluZSBwb2ludHM9IjE3IDUgMTIgMTUgNyA1Ij48L3BvbHlsaW5lPjwvc3ZnPg=="
+          alt="Logo" />
+        <h1>FashionStore</h1>
+      </div>
+      <ul class="menu">
+        <li class="menu-item active">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </li>
+        <li class="menu-item">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Pesanan</span>
+        </li>
+        <li class="menu-item">
+          <i class="fas fa-tshirt"></i>
+          <span>Produk</span>
+        </li>
+        <li class="menu-item">
+          <i class="fas fa-users"></i>
+          <span>Pelanggan</span>
+        </li>
+        <li class="menu-item">
+          <i class="fas fa-chart-bar"></i>
+          <span>Laporan</span>
+        </li>
+        <li class="menu-item">
+          <i class="fas fa-cog"></i>
+          <span>Pengaturan</span>
+        </li>
+      </ul>
+    </aside>
 
-      <!-- Main Content -->
-      <main>
-        <div class="page-title">
-          <h2>Dashboard Toko Baju</h2>
-          <div class="date">Senin, 12 Juni 2023</div>
-        </div>
+    <!-- Main Content -->
+    <main>
+      <div class="page-title">
+        <h2>Dashboard Toko Baju</h2>
+        <div class="date">Senin, 12 Juni 2023</div>
+      </div>
 
-        <!-- Cards Section -->
-        <div class="cards">
-          <div class="card">
-            <div class="card-header">
-              <div class="card-title">Total Penjualan</div>
-              <div class="card-icon sales">
-                <i class="fas fa-shopping-bag"></i>
-              </div>
-            </div>
-            <div class="card-value">1,245</div>
-            <div class="card-growth">
-              <i class="fas fa-arrow-up"></i> 12.5% dari bulan lalu
+      <!-- Cards Section -->
+      <div class="cards">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Total Penjualan</div>
+            <div class="card-icon sales">
+              <i class="fas fa-shopping-bag"></i>
             </div>
           </div>
-
-          <div class="card">
-            <div class="card-header">
-              <div class="card-title">Pesanan</div>
-              <div class="card-icon orders">
-                <i class="fas fa-clipboard-list"></i>
-              </div>
-            </div>
-            <div class="card-value">356</div>
-            <div class="card-growth">
-              <i class="fas fa-arrow-up"></i> 8.3% dari bulan lalu
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <div class="card-title">Pelanggan</div>
-              <div class="card-icon customers">
-                <i class="fas fa-user-friends"></i>
-              </div>
-            </div>
-            <div class="card-value">893</div>
-            <div class="card-growth">
-              <i class="fas fa-arrow-up"></i> 5.7% dari bulan lalu
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">
-              <div class="card-title">Pendapatan</div>
-              <div class="card-icon revenue">
-                <i class="fas fa-dollar-sign"></i>
-              </div>
-            </div>
-            <div class="card-value">Rp 48.7 Jt</div>
-            <div class="card-growth">
-              <i class="fas fa-arrow-up"></i> 15.8% dari bulan lalu
-            </div>
+          <div class="card-value">1,245</div>
+          <div class="card-growth">
+            <i class="fas fa-arrow-up"></i> 12.5% dari bulan lalu
           </div>
         </div>
 
-        <!-- Charts and Summary Section -->
-        <div class="charts-tables">
-          <div class="chart-container">
-            <h3 class="section-title">Grafik Penjualan</h3>
-            <div
-              style="
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Pesanan</div>
+            <div class="card-icon orders">
+              <i class="fas fa-clipboard-list"></i>
+            </div>
+          </div>
+          <div class="card-value">356</div>
+          <div class="card-growth">
+            <i class="fas fa-arrow-up"></i> 8.3% dari bulan lalu
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Pelanggan</div>
+            <div class="card-icon customers">
+              <i class="fas fa-user-friends"></i>
+            </div>
+          </div>
+          <div class="card-value">893</div>
+          <div class="card-growth">
+            <i class="fas fa-arrow-up"></i> 5.7% dari bulan lalu
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">Pendapatan</div>
+            <div class="card-icon revenue">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+          </div>
+          <div class="card-value">Rp 48.7 Jt</div>
+          <div class="card-growth">
+            <i class="fas fa-arrow-up"></i> 15.8% dari bulan lalu
+          </div>
+        </div>
+      </div>
+
+      <!-- Charts and Summary Section -->
+      <div class="charts-tables">
+        <div class="chart-container">
+          <h3 class="section-title">Grafik Penjualan</h3>
+          <div style="
                 height: 250px;
                 background-color: #f8f9fa;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: 8px;
-              "
-            >
-              <p>Grafik penjualan akan ditampilkan di sini</p>
-            </div>
+              ">
+            <p>Grafik penjualan akan ditampilkan di sini</p>
           </div>
+        </div>
 
-          <div class="summary-container">
-            <h3 class="section-title">Ringkasan Kategori</h3>
-            <div style="margin-bottom: 20px">
-              <div
-                style="
+        <div class="summary-container">
+          <h3 class="section-title">Ringkasan Kategori</h3>
+          <div style="margin-bottom: 20px">
+            <div style="
                   display: flex;
                   justify-content: space-between;
                   margin-bottom: 10px;
-                "
-              >
-                <span>Pakaian Pria</span>
-                <span>42%</span>
-              </div>
-              <div
-                style="
+                ">
+              <span>Pakaian Pria</span>
+              <span>42%</span>
+            </div>
+            <div style="
                   height: 10px;
                   background-color: #e9ecef;
                   border-radius: 5px;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     height: 100%;
                     width: 42%;
                     background-color: var(--primary);
                     border-radius: 5px;
-                  "
-                ></div>
-              </div>
+                  "></div>
             </div>
+          </div>
 
-            <div style="margin-bottom: 20px">
-              <div
-                style="
+          <div style="margin-bottom: 20px">
+            <div style="
                   display: flex;
                   justify-content: space-between;
                   margin-bottom: 10px;
-                "
-              >
-                <span>Pakaian Wanita</span>
-                <span>36%</span>
-              </div>
-              <div
-                style="
+                ">
+              <span>Pakaian Wanita</span>
+              <span>36%</span>
+            </div>
+            <div style="
                   height: 10px;
                   background-color: #e9ecef;
                   border-radius: 5px;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     height: 100%;
                     width: 36%;
                     background-color: var(--success);
                     border-radius: 5px;
-                  "
-                ></div>
-              </div>
+                  "></div>
             </div>
+          </div>
 
-            <div style="margin-bottom: 20px">
-              <div
-                style="
+          <div style="margin-bottom: 20px">
+            <div style="
                   display: flex;
                   justify-content: space-between;
                   margin-bottom: 10px;
-                "
-              >
-                <span>Aksesoris</span>
-                <span>15%</span>
-              </div>
-              <div
-                style="
+                ">
+              <span>Aksesoris</span>
+              <span>15%</span>
+            </div>
+            <div style="
                   height: 10px;
                   background-color: #e9ecef;
                   border-radius: 5px;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     height: 100%;
                     width: 15%;
                     background-color: var(--warning);
                     border-radius: 5px;
-                  "
-                ></div>
-              </div>
+                  "></div>
             </div>
+          </div>
 
-            <div style="margin-bottom: 20px">
-              <div
-                style="
+          <div style="margin-bottom: 20px">
+            <div style="
                   display: flex;
                   justify-content: space-between;
                   margin-bottom: 10px;
-                "
-              >
-                <span>Sepatu</span>
-                <span>7%</span>
-              </div>
-              <div
-                style="
+                ">
+              <span>Sepatu</span>
+              <span>7%</span>
+            </div>
+            <div style="
                   height: 10px;
                   background-color: #e9ecef;
                   border-radius: 5px;
-                "
-              >
-                <div
-                  style="
+                ">
+              <div style="
                     height: 100%;
                     width: 7%;
                     background-color: var(--danger);
                     border-radius: 5px;
-                  "
-                ></div>
-              </div>
+                  "></div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Sales Table -->
-        <div class="sales-table-container">
-          <h3 class="section-title">Daftar Penjualan Terbaru</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>ID Pesanan</th>
-                <th>Pelanggan</th>
-                <th>Tanggal</th>
-                <th>Jumlah</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>#ORD-0125</td>
-                <td>Budi Santoso</td>
-                <td>11 Jun 2023</td>
-                <td>Rp 350.000</td>
-                <td><span class="status completed">Selesai</span></td>
-              </tr>
-              <tr>
-                <td>#ORD-0124</td>
-                <td>Siti Rahayu</td>
-                <td>11 Jun 2023</td>
-                <td>Rp 420.000</td>
-                <td><span class="status completed">Selesai</span></td>
-              </tr>
-              <tr>
-                <td>#ORD-0123</td>
-                <td>Agus Prasetyo</td>
-                <td>10 Jun 2023</td>
-                <td>Rp 275.000</td>
-                <td><span class="status pending">Proses</span></td>
-              </tr>
-              <tr>
-                <td>#ORD-0122</td>
-                <td>Dewi Lestari</td>
-                <td>10 Jun 2023</td>
-                <td>Rp 520.000</td>
-                <td><span class="status pending">Proses</span></td>
-              </tr>
-              <tr>
-                <td>#ORD-0121</td>
-                <td>Rudi Hermawan</td>
-                <td>9 Jun 2023</td>
-                <td>Rp 180.000</td>
-                <td><span class="status cancelled">Dibatalkan</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </main>
-    </div>
+      <!-- Sales Table -->
+      <div class="sales-table-container">
+        <h3 class="section-title">Daftar Penjualan Terbaru</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID Pesanan</th>
+              <th>Pelanggan</th>
+              <th>Tanggal</th>
+              <th>Jumlah</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#ORD-0125</td>
+              <td>Budi Santoso</td>
+              <td>11 Jun 2023</td>
+              <td>Rp 350.000</td>
+              <td><span class="status completed">Selesai</span></td>
+            </tr>
+            <tr>
+              <td>#ORD-0124</td>
+              <td>Siti Rahayu</td>
+              <td>11 Jun 2023</td>
+              <td>Rp 420.000</td>
+              <td><span class="status completed">Selesai</span></td>
+            </tr>
+            <tr>
+              <td>#ORD-0123</td>
+              <td>Agus Prasetyo</td>
+              <td>10 Jun 2023</td>
+              <td>Rp 275.000</td>
+              <td><span class="status pending">Proses</span></td>
+            </tr>
+            <tr>
+              <td>#ORD-0122</td>
+              <td>Dewi Lestari</td>
+              <td>10 Jun 2023</td>
+              <td>Rp 520.000</td>
+              <td><span class="status pending">Proses</span></td>
+            </tr>
+            <tr>
+              <td>#ORD-0121</td>
+              <td>Rudi Hermawan</td>
+              <td>9 Jun 2023</td>
+              <td>Rp 180.000</td>
+              <td><span class="status cancelled">Dibatalkan</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
 
-    <script>
-      // JavaScript untuk toggle sidebar di mobile
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.querySelector(".menu-toggle");
-        const sidebar = document.querySelector(".sidebar");
-        const overlay = document.querySelector(".overlay");
+  <script>
+    // JavaScript untuk toggle sidebar di mobile
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const sidebar = document.querySelector(".sidebar");
+      const overlay = document.querySelector(".overlay");
 
-        menuToggle.addEventListener("click", function () {
-          sidebar.classList.toggle("active");
-          overlay.classList.toggle("active");
-        });
-
-        overlay.addEventListener("click", function () {
-          sidebar.classList.remove("active");
-          overlay.classList.remove("active");
-        });
+      menuToggle.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
+        overlay.classList.toggle("active");
       });
-    </script>
-  </body>
+
+      overlay.addEventListener("click", function () {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+      });
+    });
+  </script>
+</body>
+
 </html>

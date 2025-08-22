@@ -1,0 +1,4 @@
+{
+  "prettier.resolveGlobalModules": true,
+  "prettier.prettierPath": ""
+}

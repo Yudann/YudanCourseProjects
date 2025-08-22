@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - Yudan Course</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <i class="fas fa-cloud-sun logo-icon"></i>
+          <h1 class="logo-text">Weather App</h1>
+        </div>
+        <p class="tagline">
+          Dapatkan informasi cuaca terkini untuk lokasi mana pun di dunia
+        </p>
+      </header>
+
+      <div class="weather-app">
+        <div class="search-container">
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Cari kota atau lokasi..."
+            />
+            <button class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="current-weather">
+          <h2 class="location">Jakarta, Indonesia</h2>
+          <p class="date">Senin, 12 Juni 2023</p>
+
+          <div class="weather-info">
+            <div class="temperature">28<span>°C</span></div>
+            <div class="weather-icon">
+              <i class="fas fa-sun"></i>
+            </div>
+          </div>
+
+          <p class="weather-description">Cerah</p>
+
+          <div class="weather-details">
+            <div class="detail-card humidity">
+              <i class="fas fa-tint detail-icon"></i>
+              <p class="detail-title">Kelembapan</p>
+              <p class="detail-value">65%</p>
+            </div>
+
+            <div class="detail-card wind">
+              <i class="fas fa-wind detail-icon"></i>
+              <p class="detail-title">Kecepatan Angin</p>
+              <p class="detail-value">10 km/jam</p>
+            </div>
+
+            <div class="detail-card pressure">
+              <i class="fas fa-compress-alt detail-icon"></i>
+              <p class="detail-title">Tekanan</p>
+              <p class="detail-value">1010 hPa</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="forecast">
+          <h3 class="section-title">Prakiraan Cuaca 5 Hari</h3>
+
+          <div class="forecast-cards">
+            <div class="forecast-card">
+              <p class="forecast-date">Selasa, 13 Jun</p>
+              <i class="fas fa-cloud-sun forecast-icon"></i>
+              <p class="forecast-temp">29°C</p>
+              <p class="forecast-description">Berawan</p>
+            </div>
+
+            <div class="forecast-card">
+              <p class="forecast-date">Rabu, 14 Jun</p>
+              <i class="fas fa-cloud-rain forecast-icon"></i>
+              <p class="forecast-temp">27°C</p>
+              <p class="forecast-description">Hujan Ringan</p>
+            </div>
+
+            <div class="forecast-card">
+              <p class="forecast-date">Kamis, 15 Jun</p>
+              <i class="fas fa-cloud forecast-icon"></i>
+              <p class="forecast-temp">26°C</p>
+              <p class="forecast-description">Mendung</p>
+            </div>
+
+            <div class="forecast-card">
+              <p class="forecast-date">Jumat, 16 Jun</p>
+              <i class="fas fa-sun forecast-icon"></i>
+              <p class="forecast-temp">30°C</p>
+              <p class="forecast-description">Cerah</p>
+            </div>
+
+            <div class="forecast-card">
+              <p class="forecast-date">Sabtu, 17 Jun</p>
+              <i class="fas fa-bolt forecast-icon"></i>
+              <p class="forecast-temp">28°C</p>
+              <p class="forecast-description">Badai Petir</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>© 2023 Weather App - Yudan Course Projects. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

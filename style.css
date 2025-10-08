@@ -111,14 +111,9 @@ header {
   box-shadow: 0 12px 30px rgba(133, 27, 255, 0.15);
 }
 
-.project-image {
-  height: 180px;
-  background: linear-gradient(45deg, var(--primary-light), var(--primary-dark));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 3rem;
+
+.project-image img {
+  width: 100%;
 }
 
 .project-content {

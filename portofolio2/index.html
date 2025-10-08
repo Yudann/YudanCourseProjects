@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barto Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="bg-animated"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Bartolomeus</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">
+                <span class="link-number">01</span>
+                <span class="link-text">Home</span>
+            </a>
+            <a href="#about" class="mobile-link">
+                <span class="link-number">02</span>
+                <span class="link-text">About</span>
+            </a>
+            <a href="#projects" class="mobile-link">
+                <span class="link-number">03</span>
+                <span class="link-text">Projects</span>
+            </a>
+            <a href="#contact" class="mobile-link">
+                <span class="link-number">04</span>
+                <span class="link-text">Contact</span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">👋 Welcome to my world</div>
+            <h1>
+                Hi, I'm <span class="gradient-text">Bartolomeus Yudantoro</span><br>
+                Creative Developer & Designer
+            </h1>
+            <p>
+                Crafting digital experiences that blend cutting-edge technology with stunning design.
+                Specialized in building modern web applications that make an impact.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    View My Work
+                    <span>→</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about fade-in" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+
+            <div class="about-content">
+                <img src="yudan.jpg" class="about-image"></img>
+                <div class="about-text">
+                    <h3>Passionate About Creating</h3>
+                    <p>
+                        I'm a full-stack developer and designer with a passion for creating beautiful,
+                        functional, and user-centered digital experiences. With expertise in modern web
+                        technologies, I bring ideas to life through clean code and innovative design.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me exploring new design trends, contributing
+                        to open-source projects, or sharing knowledge with the developer community.
+                    </p>
+                    <div class="skills">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">TailwindCSS</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects fade-in" id="projects">
+        <div class="container">
+            <h2 class="section-title">Explore My Projects</h2>
+            <p class="section-subtitle">Recent work and creative experiments</p>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>AI-Powered Dashboard</h3>
+                        <p>Interactive analytics platform with real-time data visualization and machine learning
+                            insights.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">AI/ML</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Modern shopping experience with seamless checkout and personalized recommendations.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Next.js</span>
+                            <span class="project-tag">Stripe</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Social Media App</h3>
+                        <p>Real-time messaging platform with advanced features and beautiful UI design.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">WebSocket</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Stunning portfolio showcase with smooth animations and responsive design.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">GSAP</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Task Management Tool</h3>
+                        <p>Collaborative workspace for teams with kanban boards and productivity tracking.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Express</span>
+                            <span class="project-tag">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>Weather Forecast App</h3>
+                        <p>Beautiful weather app with detailed forecasts and location-based insights.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">API</span>
+                            <span class="project-tag">Charts</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact fade-in" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Let's create something amazing together</p>
+
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Portfolio. Designed & Built with <i class="fas fa-heart"></i></p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
